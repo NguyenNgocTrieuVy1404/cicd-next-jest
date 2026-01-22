@@ -87,6 +87,9 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
+    permissions:
+      pages: write # Grant write permission to GITHUB_TOKEN for GitHub Pages
+      id-token: write # Grant write permission for OpenID Connect
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
