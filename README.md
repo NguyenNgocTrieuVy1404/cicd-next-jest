@@ -4,7 +4,7 @@ This example shows how to configure Jest to work with Next.js.
 
 ## 🚀 CI/CD
 
-This project includes GitHub Actions workflow for automated testing and building.
+This project includes GitHub Actions workflow for automated testing and building and deployment to GitHub Pages.
 
 This includes Next.js' built-in support for Global CSS, CSS Modules and TypeScript. This example also shows how to use Jest with the App Router and React Server Components.
 
