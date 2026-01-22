@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Remove output: 'export' to allow dynamic routes
-  // If you need static export, ensure all dynamic routes have generateStaticParams()
-  // output: 'export', // Commented out to allow dynamic routes
+  // Required for static export with dynamic routes that have generateStaticParams()
+  output: 'export',
+  images: {
+    unoptimized: true,
+  },
 };
 
 module.exports = nextConfig;
